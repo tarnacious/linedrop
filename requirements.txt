@@ -1,0 +1,4 @@
+nose
+coverage=3.7.1
+pytest
+pytest-cov
