@@ -14,10 +14,10 @@ As this is still a bit of hack and a pretty bad idea it isn't on PyPI, however
 it can be installed from a git repository into a Python (2.7) environment with
 `pip`.
 
-    pip install git+https://github.com/tarnacious/linetest.git
+    pip install git+https://github.com/tarnacious/linedrop.git
     
 It can then be invoke like [pytest][pytest] except the program is called
-`linetest` and the first parameter is regular expression that should match all
+`linedrop` and the first parameter is regular expression that should match all
 the modules to be mutated.
 
     linedrop ^my_module.*$ path/to/my/tests/
@@ -27,7 +27,7 @@ the modules to be mutated.
 
 There is a small example target project in this repository.
 
-    $ git clone https://github.com/tarnacious/linetest.git .
+    $ git clone https://github.com/tarnacious/linedrop.git .
     $ virtualenv -p /usr/bin/python2.7 .
     $ ./bin/python setup.py develop
 
