@@ -43,6 +43,7 @@ def run_fixture(modules):
 
     def update(result):
         (key, line, statement, success, log) = result
+        result[2] == str(result[2])
         results.append(result)
         print "Completed", len(results), "of", total, success
 

@@ -14,7 +14,7 @@ def run(fn, q):
 
 def run_processes(funs, cb, run_function):
     results = []
-    pool = Pool(processes=4, maxtasksperchild=1)
+    pool = Pool(processes=1, maxtasksperchild=1)
 
     def callback(result):
         results.append(result)
